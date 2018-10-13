@@ -6,8 +6,8 @@
             <div class="col-md-8">
                 <h1>Test message!</h1>
 
-                <form method="POST" action="/performance-create">
-                    @csrf
+                <form method="POST" action="/record-task">
+                    {{ csrf_field() }}
                     <div class="form-group">
                         <input class="form-control" type="text" name="name" placeholder="Name">
                     </div>
@@ -19,7 +19,6 @@
                     <div class="form-group">
                         <button class="btn btn-success" type="submit">Create task</button>
                     </div>
-
 
                 </form>
 

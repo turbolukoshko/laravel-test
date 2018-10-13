@@ -5,7 +5,8 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                     <h1>Test message!</h1>
-                    <a href="/create" class="btn btn-success">Create task</a>
+                    <a href="/lists" class="btn btn-success">Back to lists</a>
+                    {{--<a href="/create-task/{{ $task->id }}" class="btn btn-success">Create task</a>--}}
                 <div>
                     <ul>
                         @foreach($tasks as $task)
@@ -20,6 +21,7 @@
                         @endforeach
                     </ul>
                 </div>
+
 
             </div>
         </div>

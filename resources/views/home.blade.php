@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <h1>You are logged in! {{Auth::user()->name}}</h1>
+                        <div>
+                            <a href="/lists" class="btn btn-success">Go to the lists</a>
+                        </div>
+
                 </div>
             </div>
         </div>
